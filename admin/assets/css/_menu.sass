@@ -1,0 +1,42 @@
+.menu
+    height: 100%
+    width: 20%
+    overflow: hidden
+    background: $colorPrimario
+    border: 2px solid $colorPrimario
+    position: relative
+    ul
+        list-style: none
+        padding-left: 0
+        width: 100%
+        .opciones
+            li
+                button, a
+                    width: 100%
+                    background: $colorPrimario
+                    display: inline-block
+                    padding: 15px
+                    text-decoration: none
+                    color: #fff
+                    text-align: center
+                    overflow: hidden
+                    border: none
+                    .icono
+                        display: block
+                        float: right
+                        font-size: 20px
+                    &:hover
+                        background: #fff
+                        color: $colorPrimario
+                .datos
+                    display: none
+                    border-bottom: 2px solid #fff
+                    border-top: 2px solid #fff
+                .tramites
+                    display: none
+                    border-bottom: 2px solid #fff
+                    border-top: 2px solid #fff
+                .gestion
+                    display: none
+                    border-bottom: 2px solid #fff
+                    border-top: 2px solid #fff

@@ -1,0 +1,45 @@
+@import cabecera
+$colorPrimario: #001a57
+@import menu
+.contenedor
+    padding-top: 115px
+    display: flex
+    flex-flow: row wrap
+    background: $colorPrimario
+    .dashboard
+        width: 80%
+        background: #fff
+        h3
+            margin: 30px
+            text-align: center
+            font-weight: bold
+        table
+            border: 1px solid rgba(0,0,0,0.2)
+            border-collapse: collapse
+            width: 80%
+            margin: 20px auto
+            margin-bottom: 50px
+            text-align: center
+            tr
+                &:hover
+                    background: #3b538a
+                    color: #fff
+                th
+                    border: 1px solid rgba(0,0,0,0.2)
+                    padding: 10px 20px
+                    background: $colorPrimario
+                    color: #fff
+                td
+                    border: 1px solid rgba(0,0,0,0.2)
+                    padding: 10px 20px
+                    a
+                        margin-right: 10px
+            .amarillo
+                background: #858d3f
+            .rojo
+                background: #cf3e3e
+
+
+
+
+@import footer

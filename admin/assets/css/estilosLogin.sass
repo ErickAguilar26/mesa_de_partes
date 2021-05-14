@@ -1,0 +1,60 @@
+@import cabecera
+$colorPrimario: #001a57
+
+.alerta
+    width: 100%
+    padding: 5px
+    font-size: 14px
+    color: white
+    background: green
+    box-shadow: 0px 1px 3px #ccc
+    margin-bottom: 15px
+    border-radius: 2px
+    text-align: center
+
+.alerta-error
+    width: 100%
+    background: red
+
+
+section
+    width: 100%
+    background: url(../../../assets/img/fondo-marcona.jpg)
+    background-size: cover
+    background-attachment: fixed
+    overflow: hidden
+    padding-top: 150px
+    .contenedor
+        width: 60%
+        background: rgba(250,250 ,250 ,.8 )
+        margin: 30px auto
+        border-radius: 20px
+        display: flex
+        flex-direction: column
+        align-items: center
+        h2
+            margin: 50px auto
+        label
+            margin-bottom: 20px
+        input[type="text"],input[type="password"]
+            margin-bottom: 30px
+            padding: 10px
+            background: none
+            border: none
+            border: 2px solid $colorPrimario
+            background: #fff
+            text-align: center
+        button
+            margin-bottom: 50px
+            padding: 15px 40px
+            background: none
+            border: none
+            border: 2px solid $colorPrimario
+            color: $colorPrimario
+            transition: 1s
+            &:hover
+                background: $colorPrimario
+                color: #fff
+                transform: scale(1.2)
+                z-index: 2
+@import footer
