@@ -1,0 +1,47 @@
+@import cabecera
+@import contenedor
+$colorPrimario: #001a57
+
+.tipoEstados
+    width: 80%
+    margin: 50px auto
+    display: flex
+    flex-flow: row wrap
+    h3
+        display: inline-block
+        width: 100%
+        text-align: center
+        margin-bottom: 20px
+    p
+        width: 50%
+        i
+            margin-right: 10px
+.contenedor-codigo-cargo
+    width: 80%
+    margin: 0 auto 20px auto
+    text-align: center
+    input[type="text"]
+        padding: 7px
+        border: none
+        border: 1px solid $colorPrimario
+.boton
+    width: 80%
+    padding: 20px 0 40px 0
+    margin: 0 auto
+    text-align: center
+    .botonaso
+        display: inline-block
+        text-decoration: none
+        padding: 10px 20px
+        border: none
+        background: none
+        border: 2px solid $colorPrimario
+        border-radius: 5px
+        color: $colorPrimario
+        transition: 1s
+        &:hover
+            background: $colorPrimario
+            color: #fff
+            transform: scale(1.2)
+            z-index: 2
+@import footer

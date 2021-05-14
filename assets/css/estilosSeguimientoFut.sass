@@ -1,0 +1,29 @@
+@import cabecera
+@import contenedor
+$colorPrimario: #001a57
+
+.contenedor
+    padding-bottom: 20px    
+
+table
+    border: 1px solid rgba(0,0,0,0.2)
+    border-collapse: collapse
+    width: 80%
+    margin: 20px auto
+    text-align: center
+    tr
+        &:hover
+            background: #2c2e913a
+        th
+            border: 1px solid rgba(0,0,0,0.2)
+            padding: 10px 20px
+            background: $colorPrimario
+            color: #fff
+        td
+            border: 1px solid rgba(0,0,0,0.2)
+            padding: 10px 20px
+            a
+                margin-right: 10px
+
+
+@import footer

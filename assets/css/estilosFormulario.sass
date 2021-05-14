@@ -1,0 +1,294 @@
+@import cabecera
+
+$colorPrimario: #001a57
+
+@import contenedor
+    
+.alerta
+    width: 100%
+    padding: 5px
+    font-size: 14px
+    color: white
+    background: green
+    box-shadow: 0px 1px 3px #ccc
+    margin-bottom: 15px
+    border-radius: 2px
+    text-align: center
+
+.alerta-error
+    width: 100%
+    background: red
+
+
+.modelo
+    width: 100%
+    padding: 30px 30px 0 30px
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    align-items: center
+.modelo2
+    width: 100%
+    display: flex
+    flex-flow: column wrap
+    align-item: center
+    padding: 0 50px 50px 50px
+
+.saludo
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-around
+    align-items: center
+    padding: 50px
+
+.sumilla
+    @extend .modelo2
+    label
+        margin-bottom: 5px
+        display: block-inline
+        width: 80%
+    textarea
+        height: 80px
+        border-radius: 10px
+        padding: 15px
+        max-height: 60px
+        min-height: 60px
+        max-width: 100%
+        min-width: 100%
+        overflow: hidden
+.area
+    width: 100%
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    align-items: center
+    padding: 0 50px 50px 50px
+    label
+        overflow: hidden
+        width: 50%
+    select
+        width: 50%
+        padding: 5px
+.datos-usuario
+    @extend .modelo2
+    .formulario-usuario
+        width: 100%
+        border: 2px solid $colorPrimario
+        border-radius: 15px
+        margin-left: -5px
+        .titulo-formulario-usuario
+            background: $colorPrimario
+            padding: 5px 0 5px 5px
+            border-radius: 10px 10px 0 0
+            color: #fff
+        .cuerpo-formulario-usuario
+            width: 100%
+            padding-bottom: 40px
+            .nombreApellido
+                @extend .modelo
+                .nombre
+                    width: 45%
+                    display: flex
+                    flex-flow: row wrap
+                    justify-content: space-between
+                    label
+                        width: 30%
+                    input[type="text"]
+                        width: 70%
+                        padding: 5px
+                        text-align: center
+                .apellido
+                    width: 45%
+                    display: flex
+                    flex-flow: row wrap
+                    justify-content: space-between
+                    label
+                        width: 30%
+                    input[type="text"]
+                        width: 70%
+                        padding: 5px
+                        text-align: center
+            .documento-identidad
+                @extend .modelo
+                .comboTipoDoc
+                    width: 45%
+                    display: flex
+                    flex-flow: row wrap
+                    justify-content: space-between
+                    label
+                        width: 30%
+                    select
+                        padding: 5px
+                        width: 70%
+                        text-align: center
+                .txtDoc
+                    width: 45%
+                    display: flex
+                    flex-flow: row wrap
+                    justify-content: space-between
+                    label
+                        width: 30%
+                    input[type="text"]
+                        padding: 5px
+                        width: 70%
+                        text-align: center
+            .domicilio
+                @extend .modelo
+                .comboTipoDom
+                    width: 30%
+                    display: flex
+                    flex-flow: row wrap
+                    justify-content: space-between
+                    label
+                        width: 35%
+                    select
+                        text-align: center
+                        padding: 5px
+                        width: 60%
+                .txtTipoDom
+                    width: 20%
+                    display: flex
+                    flex-flow: row wrap
+                    justify-content: center
+                    input[type="text"]
+                        padding: 5px
+                        width: 80%
+                        text-align: center
+                .txtNum1
+                    width: 20%
+                    display: flex
+                    flex-flow: row wrap
+                    justify-content: flex-start
+                    label
+                        width: 25%
+                    input[type="text"]
+                        padding: 5px
+                        width: 70%
+                        text-align: center
+                .txtNum2
+                    width: 20%
+                    display: flex
+                    flex-flow: row wrap
+                    justify-content: flex-end
+                    label
+                        width: 25%
+                    input[type="text"]
+                        padding: 5px
+                        width: 70%
+                        text-align: center
+            .lugar
+                @extend .modelo
+                .departamento
+                    width: 32%
+                    display: flex
+                    flex-flow: row wrap
+                    justify-content: space-between
+                    label
+                        width: 45%
+                    select
+                        width: 55%
+                        padding: 5px
+                        text-align: center
+                .provincia
+                    width: 32%
+                    display: flex
+                    flex-flow: row wrap
+                    justify-content: space-around
+                    label
+                        width: 30%
+                    select
+                        width: 65%
+                        padding: 5px
+                        text-align: center
+                .distrito
+                    width: 32%
+                    display: flex
+                    flex-flow: row wrap
+                    justify-content: space-between
+                    label
+                        width: 30%
+                    select
+                        width: 65%
+                        padding: 5px
+                        text-align: center
+            .datos-personales
+                @extend .modelo
+                .telefono
+                    width: 27%
+                    display: flex
+                    flex-flow: row wrap
+                    justify-content: space-between
+                    label
+                        width: 40%
+                    input[type="text"]
+                        padding: 5px
+                        width: 60%
+                        text-align: center
+                .celular
+                    width: 27%
+                    display: flex
+                    flex-flow: row wrap
+                    justify-content: center
+                    label
+                        width: 35%
+                    input[type="text"]
+                        padding: 5px
+                        width: 55%
+                        text-align: center
+                .correo
+                    width: 45%
+                    display: flex
+                    flex-flow: row wrap
+                    justify-content: space-between
+                    label
+                            width: 40%
+                    input[type="email"]
+                        padding: 5px
+                        width: 60%
+                        text-align: center
+
+.fundamento-solicitud
+    @extend .modelo2
+    label
+        margin-bottom: 15px
+        display: block-inline
+        width: 80%
+    textarea
+        height: 80px
+        border-radius: 10px
+        padding: 15px
+        max-height: 80px
+        min-height: 80px
+        max-width: 100%
+        min-width: 100%
+        overflow: hidden
+            
+.documentos
+    @extend .modelo2
+    .files
+        width: 100%
+        input[type="file"]
+            width: 100%
+            padding: 20px
+            margin-top: 30px
+            border: 2px dashed $colorPrimario
+            text-align: center
+.boton
+    width: 100%
+    padding: 0 50px 50px 50px
+    text-align: center
+    input[type="submit"]
+        width: 20%
+        padding: 10px
+        border: none
+        border: solid 2px $colorPrimario
+        background: none
+        cursor: pointer
+        transition: 1s
+        &:hover
+            transform: scale(1.2)
+            z-index: 2
+            background: $colorPrimario
+            color: #fff
+
+@import footer

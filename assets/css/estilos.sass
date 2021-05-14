@@ -1,0 +1,53 @@
+@import cabecera
+@import contenedor
+.seccion
+    display: inline-block
+    background: url('../img/fondo-marcona.jpg')
+    background-size: cover
+    background-attachment: fixed
+    width: 100%
+    padding-top: 150px
+    .contenedor
+        width: 85%
+        margin: 0 auto 50px auto
+        background: rgba(255,255 ,255 , .8 )
+        overflow: hidden
+        border-radius: 15px
+        .aviso
+            width: 80%
+            margin: 30px auto
+            text-align: center
+            h3
+                color: $colorPrimario
+        .opciones
+            width: 80%
+            margin: 40px auto
+            display: flex
+            flex-flow: row wrap
+            justify-content: space-around
+            a
+                border: none
+                border: 1px solid $colorPrimario
+                border-radius: 15px
+                text-decoration: none
+                color: $colorPrimario
+                font-size: 100px
+                width: 35%
+                padding: 50px 30px
+                text-align: center
+                transition: 1s
+                margin-bottom: 50px
+                &:hover
+                    transform: scale(1.2)
+                    z-index: 2
+                    background: $colorPrimario
+                    color: #fff
+                i
+                    border: none
+                h5
+                    font-size: 20px
+                    margin-top: 10px
+
+
+
+@import footer
